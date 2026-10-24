@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123653">
+<title>مدرستي الرقمية | ابتدائية عفراء</title>
+<style>
+:root{--navy:#123653;--teal:#15979a;--gold:#e2b653;--cream:#f5fbfb;--ink:#243746;--muted:#637987;--white:#fff;--line:#d9e8e9;--coral:#d66b5e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:13px;padding:11px 17px;font-weight:700;transition:.18s}button:hover{transform:translateY(-1px);filter:brightness(.98)}
+a{color:inherit}.topbar{background:var(--navy);color:#fff;padding:12px 5vw;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.brand{font-weight:800;font-size:1.05rem}.brand small{display:block;font-weight:400;color:#c7e9e8;font-size:.78rem}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn-light{background:#fff;color:var(--navy)}.btn-teal{background:var(--teal);color:#fff}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{background:transparent;border:1px solid var(--line);color:var(--navy)}
+.hero{padding:50px 5vw 38px;background:linear-gradient(125deg,#123653 0%,#176d7a 68%,#15979a 100%);color:#fff;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:42px solid #ffffff12;left:-75px;top:-110px}.hero-inner{max-width:1120px;margin:auto;position:relative;z-index:1;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}.eyebrow{color:#f2d88f;font-weight:700}.hero h1{font-size:clamp(2rem,4vw,3.3rem);line-height:1.3;margin:8px 0 12px}.hero p{font-size:1.06rem;color:#e4f5f4;max-width:680px}.hero-card{background:#ffffff12;border:1px solid #ffffff36;border-radius:24px;padding:22px;text-align:center;backdrop-filter:blur(4px)}.hero-icon{font-size:4rem}.hero-card strong{display:block;font-size:1.1rem}.hero-card span{font-size:.9rem;color:#d8f0ef}
+.wrap{max-width:1120px;margin:auto;padding:28px 5vw 50px}.section-title{margin:0 0 6px;font-size:1.65rem;color:var(--navy)}.section-intro{margin:0 0 20px;color:var(--muted)}
+.nav-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 30px}.nav-tile{background:#fff;border:1px solid var(--line);border-radius:17px;padding:15px;text-align:right;color:var(--navy);box-shadow:0 4px 15px #12365308}.nav-tile span{font-size:1.6rem;display:block}.nav-tile strong{display:block}.nav-tile small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 7px 22px #12365308}.card h3{color:var(--navy);margin:6px 0}.card p{margin:8px 0;color:var(--muted)}.icon{font-size:2rem}.pill{display:inline-block;background:#e4f5f3;color:#116c70;border-radius:999px;padding:3px 10px;font-size:.8rem;font-weight:700}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:23px;margin-top:24px}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.panel h2{margin:0;color:var(--navy);font-size:1.45rem}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-weight:700;font-size:.92rem;color:var(--navy)}input,select,textarea{width:100%;padding:12px 13px;border:1px solid #cbdedf;border-radius:12px;background:#fff;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #15979a55;border-color:var(--teal)}textarea{min-height:100px;resize:vertical}.hint{font-size:.85rem;color:var(--muted)}.notice{padding:12px 14px;background:#fff7df;border:1px solid #f0dfaa;border-radius:12px;color:#654e17;font-size:.9rem;margin:14px 0}.status{padding:12px;border-radius:12px;background:#e5f6ee;color:#176647;margin-top:12px;display:none}.status.show{display:block}.quiz-q{padding:15px 0;border-bottom:1px solid var(--line)}.quiz-q:last-child{border:0}.quiz-q p{font-weight:700;margin:0 0 10px}.answers{display:flex;gap:9px;flex-wrap:wrap}.answer{background:#eef6f6;color:var(--navy);border:1px solid #d7e9e9}.answer.correct{background:#dcf5e8;border-color:#6dc69b}.answer.wrong{background:#fff0ed;border-color:#e9a69c}.feedback{font-weight:700;margin-top:8px;min-height:24px}.progress{height:10px;background:#e5eeee;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--gold));transition:width .3s}
+.participation-list{display:grid;gap:10px;margin-top:14px}.entry{border:1px solid var(--line);border-radius:13px;padding:12px 14px;background:#fbfefe}.entry strong{color:var(--navy)}.entry small{color:var(--muted)}.empty{color:var(--muted);padding:12px 0}
+footer{background:var(--navy);color:#fff;text-align:center;padding:25px 5vw}footer p{margin:3px}.footer-sub{color:#c7e9e8;font-size:.9rem}
+.hidden{display:none!important}.section-anchor{scroll-margin-top:20px}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-card{display:none}.nav-grid{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.topbar{align-items:flex-start}.wrap{padding-top:22px}}
+@media print{.topbar,.nav-grid,button,.top-actions{display:none!important}.hero{padding:20px;background:#123653!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.wrap{padding:20px}.card,.panel{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🌐 مدرستي الرقمية <small>ابتدائية عفراء · تعلّمي أسهل ومستقبلي أجمل</small></div>
+  <div class="top-actions">
+    <button class="btn-light" onclick="window.print()">🖨️ طباعة / حفظ PDF</button>
+    <button class="btn-gold" onclick="document.getElementById('participation').scrollIntoView({behavior:'smooth'})">✍️ شاركي في المبادرة</button>
+  </div>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+  <div>
+   <div class="eyebrow">مبادرة تعليمية تفاعلية</div>
+   <h1>مدرستي الرقمية<br>تعلّمي أسهل ومستقبلي أجمل</h1>
+   <p>مساحة تعليمية مبسطة تساعد الطالبة والأسرة على التعرف إلى استخدام منصة مدرستي، وتنظيم متابعة الدروس والواجبات، والتعلم بأمان وثقة.</p>
+   <button class="btn-gold" onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">ابدئي الاستكشاف ←</button>
+   <button class="btn-light" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">اختبري معلوماتك</button>
+  </div>
+  <div class="hero-card"><div class="hero-icon">💻📚</div><strong>تعلم رقمي أكثر وعيًا وتفاعلًا</strong><span>للطالبة والأسرة والمدرسة</span></div>
+ </div>
+</section>
+
+<main class="wrap">
+<section id="explore" class="section-anchor">
+ <h2 class="section-title">استكشفي أقسام المبادرة</h2>
+ <p class="section-intro">اختاري أي قسم للانتقال إليه مباشرة.</p>
+ <div class="nav-grid">
+  <button class="nav-tile" onclick="go('about')"><span>💡</span><strong>فكرة المبادرة</strong><small>لماذا نشارك؟</small></button>
+  <button class="nav-tile" onclick="go('journey')"><span>🧭</span><strong>رحلة الطالبة</strong><small>خطوات التعلم</small></button>
+  <button class="nav-tile" onclick="go('family')"><span>🏡</span><strong>دور الأسرة</strong><small>شراكة داعمة</small></button>
+  <button class="nav-tile" onclick="go('safety')"><span>🛡️</span><strong>الأمان الرقمي</strong><small>استخدام آمن</small></button>
+  <button class="nav-tile" onclick="go('problems')"><span>🧩</span><strong>حل المشكلات</strong><small>إرشادات عملية</small></button>
+  <button class="nav-tile" onclick="go('quiz')"><span>🎯</span><strong>اختبار تفاعلي</strong><small>تحققي من فهمك</small></button>
+  <button class="nav-tile" onclick="go('participation')"><span>✍️</span><strong>سجلي مشاركتك</strong><small>احفظي المشاركة محليًا</small></button>
+  <button class="nav-tile" onclick="go('resources')"><span>🔗</span><strong>روابط مفيدة</strong><small>مصادر رسمية</small></button>
+ </div>
+</section>
+
+<section id="about" class="section-anchor">
+ <h2 class="section-title">💡 فكرة المبادرة وأهدافها</h2>
+ <p class="section-intro">نحو تجربة تعلم رقمية واضحة وميسّرة.</p>
+ <div class="grid">
+  <article class="card"><div class="icon">🎓</div><h3>تعلم مستقل</h3><p>تعزيز قدرة الطالبة على متابعة الدروس والأنشطة وتنظيم مهامها.</p></article>
+  <article class="card"><div class="icon">🤝</div><h3>شراكة مع الأسرة</h3><p>توضيح دور ولي الأمر في التشجيع والمتابعة والتواصل مع المدرسة.</p></article>
+  <article class="card"><div class="icon">🔐</div><h3>وعي رقمي</h3><p>تعزيز الاستخدام المسؤول والآمن للأجهزة والمنصات التعليمية.</p></article>
+ </div>
+</section>
+
+<section id="journey" class="panel section-anchor">
+ <div class="panel-head"><h2>🧭 رحلة الطالبة في منصة مدرستي</h2><span class="pill">5 خطوات</span></div>
+ <div class="grid" style="margin-top:15px">
+  <article class="card"><div class="icon">١️⃣</div><h3>الدخول</h3><p>استخدمي بيانات الدخول المعتمدة من المدرسة، ولا تشاركي كلمة المرور.</p></article>
+  <article class="card"><div class="icon">٢️⃣</div><h3>التخطيط</h3><p>راجعي الجدول والتعليمات والإعلانات لتعرفي ما المطلوب منك.</p></article>
+  <article class="card"><div class="icon">٣️⃣</div><h3>التعلم</h3><p>تابعي الدروس والأنشطة، ودوّني الأسئلة التي تحتاجين إلى توضيحها.</p></article>
+  <article class="card"><div class="icon">٤️⃣</div><h3>الإنجاز</h3><p>أنجزي الواجبات وسلّميها وفق التعليمات والمواعيد المحددة.</p></article>
+  <article class="card"><div class="icon">٥️⃣</div><h3>المراجعة</h3><p>تحققي من إكمال المهام وراجعي الملاحظات للاستفادة منها.</p></article>
+ </div>
+</section>
+
+<section id="family" class="panel section-anchor">
+ <h2>🏡 كيف تدعم الأسرة تعلم الطالبة؟</h2>
+ <div class="grid" style="margin-top:14px">
+  <article class="card"><h3>وقت ومكان مناسب</h3><p>توفير مكان هادئ ووقت منتظم للتعلم والراحة.</p></article>
+  <article class="card"><h3>متابعة مشجعة</h3><p>السؤال عن المهام وتشجيع الطالبة على إنجازها بنفسها.</p></article>
+  <article class="card"><h3>تواصل فعّال</h3><p>التواصل مع المدرسة عند وجود صعوبة أو الحاجة إلى مساعدة.</p></article>
+ </div>
+</section>
+
+<section id="problems" class="panel section-anchor">
+ <h2>🧩 حلول أولية للمشكلات الشائعة</h2>
+ <div class="grid" style="margin-top:14px">
+  <article class="card"><h3>تعذّر الدخول</h3><p>تحققي من صحة بيانات الدخول والاتصال بالإنترنت. إذا استمرت المشكلة، تواصلي مع المدرسة أو قناة الدعم الرسمية.</p></article>
+  <article class="card"><h3>نسيان كلمة المرور</h3><p>اتبعي خطوات الاستعادة الرسمية المعتمدة، ولا ترسلي كلمة المرور في الرسائل أو المجموعات.</p></article>
+  <article class="card"><h3>عدم ظهور واجب أو درس</h3><p>راجعي الصف والمادة والتاريخ، ثم تواصلي مع المعلمة إذا لم تظهر المهمة.</p></article>
+ </div>
+ <div class="notice">تنبيه: هذه المنصة التوعوية ليست بوابة تسجيل دخول رسمية، ولا تطلب بيانات حساب مدرستي أو كلمة المرور.</div>
+</section>
+
+<section id="safety" class="panel section-anchor">
+ <h2>🛡️ الأمان الرقمي مسؤوليتنا</h2>
+ <div class="grid" style="margin-top:14px">
+  <article class="card"><h3>🔑 احمي بياناتك</h3><p>حافظي على سرية كلمة المرور ولا تشاركيها مع الآخرين.</p></article>
+  <article class="card"><h3>🧑‍🤝‍🧑 فكّري قبل النشر</h3><p>لا تنشري معلوماتك الشخصية أو صور الآخرين دون إذن.</p></article>
+  <article class="card"><h3>🚩 اطلبي المساعدة</h3><p>أخبري ولي الأمر أو المعلمة إذا ظهر رابط أو محتوى مريب.</p></article>
+ </div>
+</section>
+
+<section id="quiz" class="panel section-anchor">
+ <div class="panel-head"><h2>🎯 اختبري معلوماتك</h2><span class="pill" id="scoreBadge">النتيجة: 0 من 5</span></div>
+ <p class="section-intro">اختاري إجابة لكل سؤال، وستظهر لكِ النتيجة فورًا.</p>
+ <div class="progress" aria-label="مستوى الإجابة"><span id="progressBar"></span></div>
+ <div id="quizQuestions"></div>
+ <div class="panel-head" style="margin-top:12px"><button class="btn-teal" onclick="resetQuiz()">إعادة الاختبار</button><span id="quizSummary" class="hint" aria-live="polite"></span></div>
+</section>
+
+<section id="participation" class="panel section-anchor">
+ <div class="panel-head"><h2>✍️ سجل المشاركة في المبادرة</h2><span class="pill">نموذج توعوي</span></div>
+ <p class="section-intro">يمكنك تسجيل مشاركة تجريبية وحفظها على هذا الجهاز. لا تدخلي معلومات حساسة أو كلمات مرور.</p>
+ <div class="notice">حفظ البيانات هنا محلي داخل المتصفح على هذا الجهاز فقط، ولا تُرسل إلى المدرسة أو إلى خادم. إذا مسحتِ بيانات المتصفح فقد تُحذف المشاركات.</div>
+ <form id="participationForm">
+  <div class="form-grid">
+   <div class="field"><label for="participantName">الاسم (اختياري)</label><input id="participantName" maxlength="70" placeholder="اكتبي الاسم أو اتركيه فارغًا"></div>
+   <div class="field"><label for="participantType">نوع المشاركة</label><select id="participantType" required><option value="">اختاري نوع المشاركة</option><option>طالبة</option><option>ولي أمر</option><option>معلمة</option><option>منسوبة للمدرسة</option></select></div>
+   <div class="field"><label for="understanding">ما أكثر ما استفدتِ منه؟</label><select id="understanding" required><option value="">اختاري إجابة</option><option>متابعة الدروس والواجبات</option><option>دور الأسرة</option><option>حل المشكلات الشائعة</option><option>الأمان الرقمي</option></select></div>
+   <div class="field"><label for="rating">تقييم المبادرة</label><select id="rating" required><option value="">اختاري التقييم</option><option>ممتازة</option><option>جيدة جدًا</option><option>جيدة</option><option>أحتاج إلى مزيد من التوضيح</option></select></div>
+   <div class="field" style="grid-column:1/-1"><label for="suggestion">اقتراح أو سؤال (اختياري)</label><textarea id="suggestion" maxlength="500" placeholder="اكتبي اقتراحك أو سؤالك هنا"></textarea></div>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:15px"><button class="btn-teal" type="submit">حفظ المشاركة على هذا الجهاز</button><button class="btn-outline" type="button" onclick="exportEntries()">تصدير المشاركات CSV</button></div>
+  <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+ </form>
+ <div class="panel-head" style="margin-top:25px"><h2 style="font-size:1.1rem">المشاركات المحفوظة على هذا الجهاز</h2><button class="btn-outline" type="button" onclick="clearEntries()">مسح المشاركات</button></div>
+ <div id="entries" class="participation-list"><div class="empty">لا توجد مشاركات محفوظة حتى الآن.</div></div>
+</section>
+
+<section id="resources" class="panel section-anchor">
+ <h2>🔗 روابط مفيدة</h2>
+ <p class="section-intro">استخدمي الروابط الرسمية فقط عند الحاجة إلى الدخول أو الدعم.</p>
+ <div class="grid">
+  <article class="card"><div class="icon">🏫</div><h3>منصة مدرستي</h3><p>الوصول إلى المنصة التعليمية الرسمية.</p><a href="https://schools.madrasati.sa/" target="_blank" rel="noopener noreferrer">فتح منصة مدرستي ↗</a></article>
+  <article class="card"><div class="icon">🌐</div><h3>وزارة التعليم</h3><p>المعلومات والإعلانات الرسمية.</p><a href="https://www.moe.gov.sa/" target="_blank" rel="noopener noreferrer">زيارة موقع الوزارة ↗</a></article>
+  <article class="card"><div class="icon">💬</div><h3>الدعم والمساندة</h3><p>إذا واجهتِ مشكلة في الحساب، ابدئي بالتواصل مع المدرسة واستخدمي قنوات الدعم الرسمية المتاحة.</p></article>
+ </div>
+</section>
+</main>
+
+<footer>
+ <p><strong>ابتدائية عفراء</strong></p>
+ <p>مبادرة «مدرستي الرقمية.. تعلّمي أسهل ومستقبلي أجمل»</p>
+ <p class="footer-sub">إعداد وتنفيذ: فاطمه الشهراني · مديرة المدرسة: فاطمه سعيد القرني</p>
+ <p class="footer-sub">معًا نحو تعلم رقمي أكثر وعيًا وتفاعلًا ✨</p>
+</footer>
+
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'})}
+const questions=[
+ {q:'أين أتابع الدروس والواجبات المدرسية؟',a:['منصة مدرستي','أي رابط مجهول','رسائل غير موثوقة'],correct:0,why:'منصة مدرستي هي المكان المخصص لمتابعة ما توفره المدرسة من محتوى ومهام.'},
+ {q:'ماذا أفعل إذا نسيت كلمة المرور؟',a:['أرسلها إلى مجموعة الصف','أتبع طريقة الاستعادة الرسمية','أستخدم كلمة مرور صديقتي'],correct:1,why:'استخدمي آلية الاستعادة الرسمية ولا تشاركي بيانات الحساب.'},
+ {q:'كيف أحافظ على حسابي؟',a:['أشارك كلمة المرور','أكتبها في مكان عام','أحافظ على سريتها'],correct:2,why:'سرية كلمة المرور تحمي حسابك ومعلوماتك.'},
+ {q:'ما دور الأسرة الأفضل؟',a:['إنجاز الواجب بدل الطالبة','تنظيم الوقت والتشجيع','تجاهل الإعلانات'],correct:1,why:'تدعم الأسرة الطالبة بالتشجيع والمتابعة وتساعدها على الاستقلالية.'},
+ {q:'إذا وصلني رابط مريب، ماذا أفعل؟',a:['أفتحه مباشرة','أرسله للجميع','لا أفتحه وأخبر شخصًا بالغًا موثوقًا'],correct:2,why:'تجنبي الروابط المريبة وأخبري ولي الأمر أو المعلمة.'}
+];
+let quizState=Array(questions.length).fill(null);
+function renderQuiz(){
+ const root=document.getElementById('quizQuestions');root.innerHTML='';
+ questions.forEach((q,i)=>{
+  const div=document.createElement('div');div.className='quiz-q';
+  const p=document.createElement('p');p.textContent=(i+1)+'. '+q.q;div.appendChild(p);
+  const answers=document.createElement('div');answers.className='answers';
+  q.a.forEach((ans,j)=>{
+   const b=document.createElement('button');b.type='button';b.className='answer';b.textContent=ans;
+   if(quizState[i]!==null){b.disabled=true;if(j===q.correct)b.classList.add('correct');else if(j===quizState[i])b.classList.add('wrong')}
+   b.addEventListener('click',()=>{quizState[i]=j;renderQuiz()});answers.appendChild(b);
+  });
+  div.appendChild(answers);
+  const fb=document.createElement('div');fb.className='feedback';
+  if(quizState[i]!==null){fb.textContent=(quizState[i]===q.correct?'أحسنتِ! ':'حاولي مرة أخرى. ')+q.why;fb.style.color=quizState[i]===q.correct?'#176647':'#a7483d'}
+  div.appendChild(fb);root.appendChild(div);
+ });
+ const answered=quizState.filter(x=>x!==null).length,score=quizState.reduce((n,v,i)=>n+(v===questions[i].correct?1:0),0);
+ document.getElementById('scoreBadge').textContent=`النتيجة: ${score} من ${questions.length}`;
+ document.getElementById('progressBar').style.width=(answered/questions.length*100)+'%';
+ document.getElementById('quizSummary').textContent=answered===questions.length?`اكتمل الاختبار! نتيجتك ${score} من ${questions.length}.`:`أجبتِ عن ${answered} من ${questions.length} أسئلة.`;
+}
+function resetQuiz(){quizState=Array(questions.length).fill(null);renderQuiz()}
+renderQuiz();
+
+const STORAGE_KEY='afraa_madrasati_participations_v1';
+function getEntries(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]')}catch(e){return []}}
+function setEntries(list){localStorage.setItem(STORAGE_KEY,JSON.stringify(list))}
+function showStatus(msg){const el=document.getElementById('formStatus');el.textContent=msg;el.classList.add('show')}
+function renderEntries(){
+ const root=document.getElementById('entries'),items=getEntries();root.innerHTML='';
+ if(!items.length){root.innerHTML='<div class="empty">لا توجد مشاركات محفوظة حتى الآن.</div>';return}
+ [...items].reverse().forEach(item=>{
+  const div=document.createElement('div');div.className='entry';
+  const strong=document.createElement('strong');strong.textContent=(item.name||'مشاركة بدون اسم')+' — '+item.type;div.appendChild(strong);
+  const small=document.createElement('small');small.textContent=' · '+item.date;div.appendChild(small);
+  const p=document.createElement('p');p.textContent='الاستفادة: '+item.learning+' | التقييم: '+item.rating;div.appendChild(p);
+  if(item.suggestion){const p2=document.createElement('p');p2.textContent='اقتراح/سؤال: '+item.suggestion;div.appendChild(p2)}
+  root.appendChild(div);
+ });
+}
+document.getElementById('participationForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const item={
+  name:document.getElementById('participantName').value.trim(),
+  type:document.getElementById('participantType').value,
+  learning:document.getElementById('understanding').value,
+  rating:document.getElementById('rating').value,
+  suggestion:document.getElementById('suggestion').value.trim(),
+  date:new Date().toLocaleString('ar-SA')
+ };
+ try{const items=getEntries();items.push(item);setEntries(items);renderEntries();e.target.reset();showStatus('تم حفظ المشاركة على هذا الجهاز بنجاح. لن تظهر على أجهزة أخرى تلقائيًا.')}
+ catch(err){showStatus('تعذّر الحفظ في هذا المتصفح. جرّبي فتح الملف في متصفح آخر أو تصدير البيانات عند توفرها.')}
+});
+function clearEntries(){
+ if(!confirm('هل تريدين مسح جميع المشاركات المحفوظة على هذا الجهاز؟'))return;
+ localStorage.removeItem(STORAGE_KEY);renderEntries();showStatus('تم مسح المشاركات المحفوظة من هذا المتصفح.');
+}
+function exportEntries(){
+ const items=getEntries();if(!items.length){showStatus('لا توجد مشاركات لتصديرها بعد.');return}
+ const headers=['الاسم','نوع المشاركة','الاستفادة','التقييم','الاقتراح أو السؤال','التاريخ'];
+ const rows=items.map(x=>[x.name,x.type,x.learning,x.rating,x.suggestion,x.date]);
+ const csv='\uFEFF'+[headers,...rows].map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+ const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'}),url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download='مشاركات_مدرستي_الرقمية.csv';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+ showStatus('بدأ تنزيل ملف المشاركات بصيغة CSV.');
+}
+renderEntries();
+</script>
+</body>
+</html>
